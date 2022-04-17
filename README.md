@@ -14,7 +14,7 @@ Example:
 ```js
 // CSS Imports, the most distant last
 import "../../global.css";
-import "./MyComponent.module.css";
+import styles from "./MyComponent.module.css";
 
 // Absolute modules with side effects (not sorted because order may matter)
 import "a";

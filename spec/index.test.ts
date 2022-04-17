@@ -7,7 +7,7 @@ describe('importSortStylePanta', () => {
   it('works as expected', () => {
     const code =
       `
-import "./MyComponent.module.css";
+import styles from "./MyComponent.module.css";
 import "../../global.css";
 
 import {readFile, writeFile} from "fs";
@@ -46,7 +46,7 @@ import "./b";
     expect(result.code.trim()).toEqual(
       `
 import "../../global.css";
-import "./MyComponent.module.css";
+import styles from "./MyComponent.module.css";
 
 import "a";
 import "c";
